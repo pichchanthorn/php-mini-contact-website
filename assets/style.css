@@ -1,0 +1,410 @@
+:root {
+    --bg: #0f172a;
+    --card: #020617;
+    --primary: #22c55e;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.header p {
+    margin-top: 8px;
+    color: var(--muted);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    max-width: 900px;
+    width: 100%;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: white;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    border: none;
+    color: #052e16;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.alert {
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert.success {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.alert.error {
+    background: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+
+/* ===== Typography Fix ===== */
+body {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 14px 16px;
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+/* Prevent text breaking badly */
+td {
+    word-break: break-word;
+}
+
+/* Date column */
+td:last-child {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+/* Improve table readability */
+thead th {
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+
+/* ===== ADMIN TABLE FIX ===== */
+.admin-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 16px;
+    line-height: 1.6;
+    vertical-align: top;
+    text-align: left;
+}
+
+.admin-table td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Email column */
+.admin-table td:nth-child(3) {
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+/* Message column */
+.admin-table td:nth-child(4) {
+    white-space: normal;
+    color: #e5e7eb;
+}
+
+/* Date column */
+.admin-table td:nth-child(5) {
+    white-space: nowrap;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+
+/* ===== MOBILE RESPONSIVE ADMIN TABLE ===== */
+@media (max-width: 768px) {
+
+    .admin-table,
+    .admin-table thead,
+    .admin-table tbody,
+    .admin-table th,
+    .admin-table td,
+    .admin-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .admin-table thead {
+        display: none;
+    }
+
+    .admin-table tr {
+        margin-bottom: 20px;
+        background: rgba(15, 23, 42, 0.9);
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .admin-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #1f2933;
+        font-size: 0.95rem;
+    }
+
+    .admin-table td:last-child {
+        border-bottom: none;
+    }
+
+    .admin-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #22c55e;
+    }
+}
+
+
+.messages {
+    display: grid;
+    gap: 20px;
+}
+
+.message-card {
+    background: linear-gradient(145deg, #0b1220, #020617);
+    border-radius: 14px;
+    padding: 18px;
+    color: #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.message-card .top {
+    display: flex;
+    justify-content: space-between;
+    color: #22c55e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.message-card p {
+    margin: 6px 0;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.empty {
+    text-align: center;
+    color: #94a3b8;
+}
+
+
+.admin-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #22c55e;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: transparent;
+    color: #a7f3d0;
+    border: 1px solid #22c55e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+    background: #22c55e;
+    color: #022c22;
+    box-shadow: 0 0 0 2px rgba(34,197,94,0.2);
+}
+
+
+.message-card {
+    background: linear-gradient(145deg, #0b1220, #020617);
+    border-radius: 14px;
+    padding: 18px;
+    color: #e5e7eb;
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    transition: all 0.25s ease;
+}
+
+.message-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.6);
+    border: 1px solid rgba(34,197,94,0.4);
+}
+
+
+/* ===== ADMIN ACTION BAR ===== */
+.admin-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+/* Primary Button (Reset Password) */
+.btn-primary {
+    background: #22c55e;
+    color: #022c22;
+}
+
+.btn-primary:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.35);
+}
+
+/* Logout Button */
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(239,68,68,0.35);
+}
+
+/* Shared button behavior */
+.btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+
+/* Delete Button */
+.btn-delete {
+    background: transparent;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btn-delete:hover {
+    background: #ef4444;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(239,68,68,0.35);
+}
+
+
+.btn-sm {
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+.message-card form {
+    margin-top: 10px;
+    text-align: right;
+}
+
+
