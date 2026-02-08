@@ -1,14 +1,30 @@
 # Mini Contact Website (PHP)
 
-A clean, secure, and professional contact website built with **PHP** and **MySQL**.
-This project includes an **admin panel** for managing messages and demonstrates
+A clean, secure, and professional contact website built with **PHP** and **MySQL**.  
+This project includes an **admin panel** for managing messages and demonstrates  
 real-world backend development and deployment workflow.
 
 ---
 
 ## 🔗 Live Demo
-- Website: https://minicontact.rf.gd
-- Admin Panel: https://minicontact.rf.gd/admin
+- Website: https://minicontact.rf.gd  
+- Admin Panel: https://minicontact.rf.gd/admin  
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage – Contact Form
+![Homepage](screenshots/homepage.png)
+
+### 🔐 Admin Login
+![Admin Login](screenshots/admin-login.png)
+
+### 📥 Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### 🔁 Reset Password
+![Reset Password](screenshots/reset-password.png)
 
 ---
 
@@ -37,18 +53,18 @@ real-world backend development and deployment workflow.
 
 ## 🗄️ Database Structure
 
-- **admins**
-  - id
-  - username
-  - password (hashed)
-  - created_at
+### **admins**
+- id  
+- username  
+- password (hashed)  
+- created_at  
 
-- **messages**
-  - id
-  - name
-  - email
-  - message
-  - created_at
+### **messages**
+- id  
+- name  
+- email  
+- message  
+- created_at  
 
 ---
 
@@ -95,8 +111,8 @@ real-world backend development and deployment workflow.
 ---
 
 ## 🎯 Project Purpose
-This project was built as part of my learning journey as an **IT student**
-to strengthen my skills in backend development, security, and deployment.
+This project was built as part of my learning journey as an **IT student**  
+to strengthen my skills in backend development, security, and deployment.  
 It also serves as a **portfolio project**.
 
 ---
