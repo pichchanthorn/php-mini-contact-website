@@ -26,19 +26,19 @@ This project is designed to simulate a real-world backend web application with c
 
 ## 🖼️ Screenshots
 
-> Replace placeholders with final screenshots from the `screenshots/` directory.
+Production UI snapshots from the live implementation.
 
 ### 🏠 Homepage – Contact Form
-![Homepage Placeholder](screenshots/placeholder-homepage.png)
+![Homepage](screenshots/1.png)
 
 ### 🔐 Admin Login (Credentials + GitHub OAuth)
-![Admin Login Placeholder](screenshots/placeholder-admin-login.png)
+![Admin Login](screenshots/admin-login.png)
 
 ### 📥 Admin Dashboard – Messages Management
-![Admin Dashboard Placeholder](screenshots/placeholder-admin-dashboard.png)
+![Admin Dashboard](screenshots/Admin_Panel_Messages_from_Contact_Form.png)
 
 ### 🔁 Password Reset Flow
-![Password Reset Placeholder](screenshots/placeholder-reset-password.png)
+![Password Reset](screenshots/reset-password.png)
 
 ---
 
