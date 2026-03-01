@@ -32,7 +32,7 @@ Production UI snapshots from the live implementation.
 ![Homepage](screenshots/1.png)
 
 ### 🔐 Admin Login (Credentials + GitHub OAuth)
-![Admin Login](screenshots/admin-login.png)
+![Admin Login](screenshots/admin-login1.png)
 
 ### 📥 Admin Dashboard – Messages Management
 ![Admin Dashboard](screenshots/Admin_Panel_Messages_from_Contact_Form.png)
