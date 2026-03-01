@@ -40,6 +40,12 @@ if (isset($_SESSION['admin'])) {
             <button type="submit">Login</button>
         </form>
 
+        <p style="text-align:center; margin: 18px 0;">or</p>
+
+        <a href="../github_login.php" class="btn btn-secondary" style="display:block; text-align:center;">
+            Continue with GitHub
+        </a>
+
     </div>
 </main>
 
